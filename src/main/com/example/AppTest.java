@@ -1,10 +1,10 @@
-package com.example; 
-import org.junit.Test; 
-import static org.junit.Assert.*; 
-public class AppTest { 
-  @Test 
-  public void testAdd() { 
-    App app = new App(); 
-    assertEquals(5, app.add(2, 3)); 
-  } 
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+class Program1Test{
+  Program1 pgm = new Program1();
+  @Test
+  void checkOutput(){
+    int ans = pgm.addTwoNumbers(2,3);
+    assertEquals(5,ans);
+}
 }
